@@ -6,30 +6,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shubham Patil | Software Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
-<body class="bg-gray-50 text-gray-800">
-    <nav class="bg-white shadow p-4">
-        <div class="max-w-6xl mx-auto flex justify-between">
-            <h1 class="text-xl font-bold text-blue-600">Shubham Patil</h1>
-            <div class="space-x-6">
-                <a href="index.html" class="hover:text-blue-600 font-medium">Home</a>
-                <a href="about.html" class="hover:text-blue-600 font-medium">About</a>
-                <a href="services.html" class="hover:text-blue-600 font-medium">Services</a>
-                <a href="contact.html" class="hover:text-blue-600 font-medium">Contact</a>
+<body class="bg-black text-white font-sans">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-black bg-opacity-90 shadow z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-wide">Shubham Patil</h1>
+            <div class="space-x-6 hidden md:block">
+                <a href="index.html" class="hover:text-gray-400 transition">Home</a>
+                <a href="services.html" class="hover:text-gray-400 transition">Services</a>
+                <a href="about.html" class="hover:text-gray-400 transition">About</a>
+                <a href="contact.html" class="hover:text-gray-400 transition">Contact</a>
             </div>
         </div>
     </nav>
 
-    <section class="text-center py-20">
-        <h2 class="text-4xl font-bold mb-4">Hi, I’m Shubham 👋</h2>
-        <p class="text-lg text-gray-600 mb-6">Full Stack Developer specializing in Python (Django) and React</p>
-        <a href="contact.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Get in Touch</a>
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6" data-aos="fade-up">
+        <h2 class="text-5xl md:text-6xl font-bold mb-6">Hi, I'm <span class="text-gray-400">Shubham</span></h2>
+        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mb-10">
+            A <strong>Full Stack Developer</strong> focused on crafting scalable backends using <strong>Django</strong>
+            and building modern, responsive UIs with <strong>React</strong> and <strong>Tailwind CSS</strong>.
+        </p>
+        <a href="contact.html"
+            class="border border-gray-400 px-8 py-3 rounded-md hover:bg-white hover:text-black transition">
+            Let's Connect
+        </a>
     </section>
 
-    <footer class="text-center py-6 border-t text-gray-500 text-sm">
-        © 2025 Shubham Patil. All rights reserved.
+    <!-- Services Section -->
+    <section id="services" class="py-20 border-t border-gray-800" data-aos="fade-up">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h3 class="text-3xl font-semibold mb-12">What I Do</h3>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-neutral-900 p-6 rounded-lg hover:-translate-y-2 transition">
+                    <h4 class="text-xl font-semibold mb-2">Web Development</h4>
+                    <p class="text-gray-400">Create responsive, SEO-friendly websites using <strong>HTML, JS, and
+                            Tailwind CSS</strong>.</p>
+                </div>
+                <div class="bg-neutral-900 p-6 rounded-lg hover:-translate-y-2 transition">
+                    <h4 class="text-xl font-semibold mb-2">Backend Engineering</h4>
+                    <p class="text-gray-400">Develop scalable APIs and systems with <strong>Python (Django)</strong> and
+                        <strong>PostgreSQL</strong>.
+                    </p>
+                </div>
+                <div class="bg-neutral-900 p-6 rounded-lg hover:-translate-y-2 transition">
+                    <h4 class="text-xl font-semibold mb-2">UI/UX Design</h4>
+                    <p class="text-gray-400">Design clean, intuitive interfaces using <strong>Figma</strong> and modern
+                        frontend practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 border-t border-gray-800" data-aos="fade-up">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-3xl font-semibold text-center mb-12">Projects</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-neutral-900 p-6 rounded-lg hover:shadow-lg transition">
+                    <h4 class="text-xl font-semibold mb-2">Vishal Roadlines</h4>
+                    <p class="text-gray-400 mb-3">Logistics and transport business website with modern responsive UI.
+                    </p>
+                    <a href="https://vishalroadlines.in/" target="_blank"
+                        class="text-gray-400 hover:text-white underline">View Project</a>
+                </div>
+                <div class="bg-neutral-900 p-6 rounded-lg hover:shadow-lg transition">
+                    <h4 class="text-xl font-semibold mb-2">The Timber Town</h4>
+                    <p class="text-gray-400 mb-3">Furniture and woodwork site built for product showcasing.</p>
+                    <a href="https://thetimbertown.com/" target="_blank"
+                        class="text-gray-400 hover:text-white underline">View Project</a>
+                </div>
+                <div class="bg-neutral-900 p-6 rounded-lg hover:shadow-lg transition">
+                    <h4 class="text-xl font-semibold mb-2">HRMS System</h4>
+                    <p class="text-gray-400 mb-3">HR management platform built using Django & React.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="py-20 border-t border-gray-800 text-center" data-aos="fade-up">
+        <div class="max-w-5xl mx-auto px-6">
+            <h3 class="text-3xl font-semibold mb-12">Client Feedback</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-neutral-900 p-6 rounded-lg">
+                    <p class="text-gray-400">"Delivered clean, fast, and secure applications with great communication."
+                    </p>
+                    <h5 class="mt-4 text-white font-semibold">– Client A</h5>
+                </div>
+                <div class="bg-neutral-900 p-6 rounded-lg">
+                    <p class="text-gray-400">"Professional, detail-oriented, and technically strong in backend logic."
+                    </p>
+                    <h5 class="mt-4 text-white font-semibold">– Client B</h5>
+                </div>
+                <div class="bg-neutral-900 p-6 rounded-lg">
+                    <p class="text-gray-400">"Modern design, smooth animations, and top-quality delivery!"</p>
+                    <h5 class="mt-4 text-white font-semibold">– Client C</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="py-20 text-center border-t border-gray-800" data-aos="zoom-in">
+        <h3 class="text-3xl font-semibold mb-4">Have a Project in Mind?</h3>
+        <p class="text-gray-400 mb-8">Let’s collaborate and turn your idea into a real product.</p>
+        <a href="contact.html"
+            class="border border-gray-400 px-8 py-3 rounded-md hover:bg-white hover:text-black transition">
+            Get in Touch
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 py-6 text-center text-gray-500">
+        © 2025 Shubham Patil — Built with ❤️ using Tailwind CSS
     </footer>
+
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
 </body>
 
 </html>
