@@ -5,9 +5,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shubham Patil | Software Developer</title>
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Devicon (Colored Tech Icons) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="icon" type="image/jpeg" href="assets/images/favicon.jpg">
 </head>
 
 <body class="bg-black text-white font-sans">
@@ -28,8 +39,8 @@
     <section class="min-h-screen flex flex-col justify-center items-center text-center px-6" data-aos="fade-up">
         <h2 class="text-5xl md:text-6xl font-bold mb-6">Hi, I'm <span class="text-gray-400">Shubham</span></h2>
         <p class="text-lg md:text-xl text-gray-400 max-w-2xl mb-10">
-            A <strong>Full Stack Developer</strong> focused on crafting scalable backends using <strong>Django</strong>
-            and building modern, responsive UIs with <strong>React</strong> and <strong>Tailwind CSS</strong>.
+            A <strong>Full Stack Developer</strong> focused on building scalable backends using <strong>Django</strong>
+            and creating modern, responsive UIs with <strong>React</strong> and <strong>Tailwind CSS</strong>.
         </p>
         <a href="contact.html"
             class="border border-gray-400 px-8 py-3 rounded-md hover:bg-white hover:text-black transition">
@@ -44,24 +55,143 @@
             <div class="grid md:grid-cols-3 gap-10">
                 <div class="bg-neutral-900 p-6 rounded-lg hover:-translate-y-2 transition">
                     <h4 class="text-xl font-semibold mb-2">Web Development</h4>
-                    <p class="text-gray-400">Create responsive, SEO-friendly websites using <strong>HTML, JS, and
-                            Tailwind CSS</strong>.</p>
+                    <p class="text-gray-400">Responsive and fast websites using <strong>HTML, JS, and Tailwind
+                            CSS</strong>.</p>
                 </div>
                 <div class="bg-neutral-900 p-6 rounded-lg hover:-translate-y-2 transition">
                     <h4 class="text-xl font-semibold mb-2">Backend Engineering</h4>
-                    <p class="text-gray-400">Develop scalable APIs and systems with <strong>Python (Django)</strong> and
+                    <p class="text-gray-400">Scalable APIs using <strong>Python (Django)</strong> and
                         <strong>PostgreSQL</strong>.
                     </p>
                 </div>
                 <div class="bg-neutral-900 p-6 rounded-lg hover:-translate-y-2 transition">
                     <h4 class="text-xl font-semibold mb-2">UI/UX Design</h4>
-                    <p class="text-gray-400">Design clean, intuitive interfaces using <strong>Figma</strong> and modern
-                        frontend practices.</p>
+                    <p class="text-gray-400">Clean interfaces using <strong>Figma</strong> and modern frontend
+                        practices.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Technical Skills Section -->
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-20 border-t border-gray-800 bg-black text-white" data-aos="fade-up">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-3xl font-semibold text-center mb-12">Technical Skills</h3>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+                <!-- Frontend -->
+                <div class="bg-neutral-900 p-6 rounded-lg hover:-translate-y-2 transition-all" data-aos="zoom-in">
+                    <h4 class="text-xl font-semibold mb-4 text-gray-300">Frontend</h4>
+                    <div class="flex justify-center flex-wrap gap-6 text-center icon-animate">
+                        <div>
+                            <i class="devicon-html5-plain colored text-5xl"></i>
+                            <p class="text-gray-400 text-sm mt-2">HTML5</p>
+                        </div>
+                        <div>
+                            <i class="devicon-css3-plain colored text-5xl"></i>
+                            <p class="text-gray-400 text-sm mt-2">CSS3</p>
+                        </div>
+                        <div>
+                            <i class="devicon-javascript-plain colored text-5xl"></i>
+                            <p class="text-gray-400 text-sm mt-2">JavaScript</p>
+                        </div>
+                        <div>
+                            <i class="devicon-react-original colored text-5xl"></i>
+                            <p class="text-gray-400 text-sm mt-2">React</p>
+                        </div>
+                        <div>
+                            <i class="devicon-tailwindcss-plain colored text-5xl"></i>
+                            <p class="text-gray-400 text-sm mt-2">Tailwind CSS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend & Database -->
+                <div class="bg-neutral-900 p-6 rounded-lg hover:-translate-y-2 transition-all" data-aos="zoom-in"
+                    data-aos-delay="100">
+                    <h4 class="text-xl font-semibold mb-4 text-gray-300">Backend & Database</h4>
+                    <div class="flex justify-center flex-wrap gap-6 text-center icon-animate">
+                        <div>
+                            <i class="devicon-python-plain colored text-5xl"></i>
+                            <p class="text-gray-400 text-sm mt-2">Python</p>
+                        </div>
+                        <div>
+                            <i class="devicon-django-plain colored text-5xl"></i>
+                            <p class="text-gray-400 text-sm mt-2">Django</p>
+                        </div>
+                        <div>
+                            <i class="devicon-nodejs-plain colored text-5xl"></i>
+                            <p class="text-gray-400 text-sm mt-2">Node.js</p>
+                        </div>
+                        <div>
+                            <i class="devicon-express-original colored text-5xl"></i>
+                            <p class="text-gray-400 text-sm mt-2">Express.js</p>
+                        </div>
+                        <div>
+                            <i class="devicon-postgresql-plain colored text-5xl"></i>
+                            <p class="text-gray-400 text-sm mt-2">PostgreSQL</p>
+                        </div>
+                        <div>
+                            <i class="devicon-mongodb-plain colored text-5xl"></i>
+                            <p class="text-gray-400 text-sm mt-2">MongoDB</p>
+                        </div>
+                        <div>
+                            <i class="devicon-mysql-plain colored text-5xl"></i>
+                            <p class="text-gray-400 text-sm mt-2">MySQL</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX & Dev Tools -->
+                <div class="bg-neutral-900 p-6 rounded-lg hover:-translate-y-2 transition-all" data-aos="zoom-in"
+                    data-aos-delay="200">
+                    <h4 class="text-xl font-semibold mb-4 text-gray-300">UI/UX & Dev Tools</h4>
+                    <div class="flex justify-center flex-wrap gap-6 text-center icon-animate">
+                        <div>
+                            <i class="devicon-figma-plain colored text-5xl"></i>
+                            <p class="text-gray-400 text-sm mt-2">Figma</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/color/48/000000/canva.png" class="w-12 h-12 mx-auto"
+                                alt="Canva icon">
+                            <p class="text-gray-400 text-sm mt-2">Canva</p>
+                        </div>
+                        <div>
+                            <i class="devicon-github-original colored text-5xl"></i>
+                            <p class="text-gray-400 text-sm mt-2">GitHub</p>
+                        </div>
+                        <div>
+                            <i class="devicon-docker-plain colored text-5xl"></i>
+                            <p class="text-gray-400 text-sm mt-2">Docker</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & Deployment -->
+                <div class="bg-neutral-900 p-6 rounded-lg hover:-translate-y-2 transition-all" data-aos="zoom-in"
+                    data-aos-delay="300">
+                    <h4 class="text-xl font-semibold mb-4 text-gray-300">Cloud & Deployment</h4>
+                    <div class="flex justify-center flex-wrap gap-6 text-center icon-animate">
+                        <div>
+                            <i class="devicon-amazonwebservices-plain colored text-5xl"></i>
+                            <p class="text-gray-400 text-sm mt-2">AWS</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/color/48/000000/netlify.png" class="w-12 h-12 mx-auto"
+                                alt="Netlify icon">
+                            <p class="text-gray-400 text-sm mt-2">Netlify</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/fluency/48/000000/github-actions.png"
+                                class="w-12 h-12 mx-auto" alt="GitHub Actions">
+                            <p class="text-gray-400 text-sm mt-2">CI/CD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Projects Section -->
     <section id="projects" class="py-20 border-t border-gray-800" data-aos="fade-up">
         <div class="max-w-6xl mx-auto px-6">
@@ -120,6 +250,7 @@
             Get in Touch
         </a>
     </section>
+
 
     <!-- Footer -->
     <footer class="border-t border-gray-800 py-6 text-center text-gray-500">
