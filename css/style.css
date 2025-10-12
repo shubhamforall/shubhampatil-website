@@ -1,3 +1,31 @@
+/* Active tab styling */
+.nav-link {
+    position: relative;
+    padding-bottom: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link.active {
+    color: #047857;
+    font-weight: 600;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 100%;
+    background-color: #047857;
+    border-radius: 9999px;
+}
+
+
 /* Floating animation for icons */
 @keyframes float {
 
@@ -37,4 +65,21 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+/* Pulsing glow effect for images */
+@keyframes pulseGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 40px rgba(59, 130, 246, 0.6);
+    }
+
+    50% {
+        box-shadow: 0 0 80px rgba(59, 130, 246, 0.8);
+    }
+}
+
+img {
+    animation: pulseGlow 3s ease-in-out infinite;
 }
