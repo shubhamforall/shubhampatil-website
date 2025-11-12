@@ -10,19 +10,12 @@
 }
 
 .nav-link.active {
-    color: #047857;
+    color: #15803d;
     font-weight: 600;
 }
 
-.nav-link.active::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    height: 2px;
-    width: 100%;
-    background-color: #047857;
-    border-radius: 9999px;
+.nav-link.active span {
+    width: 100% !important;
 }
 
 
@@ -41,6 +34,46 @@
 
 .icon-animate div {
     animation: float 3s ease-in-out infinite;
+}
+
+/* Skill card enhancements */
+.skill-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(34, 197, 94, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.skill-card:hover::before {
+    left: 100%;
+}
+
+.skill-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.skill-item:hover {
+    transform: translateY(-4px) scale(1.05);
+}
+
+.skill-item i,
+.skill-item img {
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover i,
+.skill-item:hover img {
+    transform: scale(1.1);
 }
 
 /* Smooth scroll */

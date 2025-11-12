@@ -36,11 +36,50 @@ document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.querySelector("nav");
     window.addEventListener("scroll", () => {
         if (window.scrollY > 50) {
-            navbar.classList.add("bg-opacity-100", "shadow-md");
+            navbar.classList.add("bg-black/95", "shadow-lg");
+            navbar.classList.remove("bg-black/80");
         } else {
-            navbar.classList.remove("bg-opacity-100", "shadow-md");
+            navbar.classList.add("bg-black/80");
+            navbar.classList.remove("bg-black/95", "shadow-lg");
         }
     });
+
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuIcon = document.getElementById("menu-icon");
+
+    if (mobileMenuButton && mobileMenu && menuIcon) {
+        mobileMenuButton.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+            if (mobileMenu.classList.contains("hidden")) {
+                menuIcon.classList.remove("fa-times");
+                menuIcon.classList.add("fa-bars");
+            } else {
+                menuIcon.classList.remove("fa-bars");
+                menuIcon.classList.add("fa-times");
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                mobileMenu.classList.add("hidden");
+                menuIcon.classList.remove("fa-times");
+                menuIcon.classList.add("fa-bars");
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener("click", (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add("hidden");
+                menuIcon.classList.remove("fa-times");
+                menuIcon.classList.add("fa-bars");
+            }
+        });
+    }
 
     console.log("✅ Shubham Patil website initialized successfully");
 });
