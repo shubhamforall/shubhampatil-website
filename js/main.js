@@ -81,5 +81,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    console.log("✅ Shubham Patil website initialized successfully");
 });
