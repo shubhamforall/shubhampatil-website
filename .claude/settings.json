@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls assets *)",
+      "Bash(ls images *)",
+      "WebFetch(domain:thesocialsnow.com)",
+      "WebFetch(domain:adesignstudioco.com)",
+      "Bash(curl -sL \"https://thesocialsnow.com/assets/images/logo.jpg\" -o The_Social_Snow.jpg)",
+      "Bash(curl -sL \"https://thesocialsnow.com/assets/images/founder.jpg\" -o social_snow_founder.jpg)",
+      "Bash(curl -sL \"https://adesignstudioco.com/assets/images/home_bg.jpg\" -o A_Design_Studio.jpg)",
+      "Bash(curl -sL \"https://adesignstudioco.com/assets/images/living%20interior/01_View01.jpg\" -o adesign_living.jpg)"
+    ]
+  }
+}
